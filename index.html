@@ -2,10 +2,46 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeux du Pendu</title>
-    <link rel="stylesheet" href="../cssreset.css" />
-    <link rel="stylesheet" href="../css.css" />
+    <meta name="viewport" />
+    <title>Jeu du Pendu</title>
+    <style>
+      * {
+        margin: 0.35em;
+      }
+      body {
+        background-color: rgb(197, 195, 195);
+        font-size: 2em;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-content: center;
+        margin: auto;
+      }
+      h1,
+      p,
+      h2 {
+        text-align: center;
+      }
+
+      input,
+      button {
+        font-size: 1.2em;
+        margin: 0.3em 1em;
+        border-radius: 1em;
+        text-align: center;
+      }
+      #bonne {
+        color: green;
+      }
+      #moyen {
+        color: yellow;
+      }
+      #mauvaise {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
