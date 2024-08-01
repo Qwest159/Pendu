@@ -6,17 +6,16 @@ export function affichage_pendu(
   categorie
 ) {
   document.querySelector("#app").innerHTML = `
-  <main>
     <h2>Catégorie: ${categorie}</h2>
+
 
     <p id="bonnes_lettres">Bonne(s) lettre(s):</p>
     <p id ="mauvaises_lettres">Mauvaise(s) lettre(s):</p>
     <p id="mot">${reponse_pendu(mot_tableau, tableau_vrai)}</p>
     <p id="vierestante">Vie(s) restante(s): <strong id="bonne">${vie}</strong></p>
    
-    <input type="text" id="reponse_utilisateur_lettre" placeholder ="Ecrivez-ici" autocomplete="off">
+    <input type="text" id="reponse_utilisateur_lettre" placeholder ="Ecrivez-ici">
     <button type="submit" id="envoier_lettre">Envoiez</button>
-    </main>
     `;
 }
 export function reponse_pendu(mot_tableau, tableau_vrai) {
